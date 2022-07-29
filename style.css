@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+body {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+
+/* ------container------- */
+
+.container {
+  position: relative;
+}
+
+.container-header {
+  border: 1px solid #2dd35c;
+  width: 900px;
+  padding: 100px 0px 100px 100px;
+  border-left: none;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 20px;
+}
+
+.shadow {
+  height: 200px;
+  width: 1000px;
+  background-color: rgba(175, 157, 192, 0.815);
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 30px;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 100px;
+  right: 0%;
+}
+
+.ecommerce {
+  font-weight: 900;
+  color: #5553B7;
+}
+
+/* ------button------- */
+
+.btn {
+  height: 36px;
+  margin: 20px 20px 20px 0px;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+  transition: all 0.1s;
+}
+
+.try {
+  background-color: #2dd35c;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+.book {
+  background-color: transparent;
+  color: #5553b7;
+  border-radius: 50px;
+  border: 2px solid #5553b7;
+}
+
+@media (max-width: 1025px) {
+  .container-header {
+    width: 600px;
+  }
+
+  .shadow {
+    right: 0%;
+    width: 600px;
+  }
+}
+
+@media (max-width: 769px) {
+  .container-header {
+    height: 150px;
+    width: 500px;
+  }
+
+  .shadow {
+    right: 0%;
+    width: 400px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container-header {
+    height: 100px;
+    width: 400px;
+    padding-left: 0;
+  }
+
+  .shadow {
+    right: 0%;
+    width: 150px;
+    height: 150px;
+  }
+}
